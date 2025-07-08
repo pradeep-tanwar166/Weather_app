@@ -1,1 +1,1 @@
-weateher api 
+Weather api 
