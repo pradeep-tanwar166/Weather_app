@@ -9,7 +9,8 @@ const URL=`https://api.openweathermap.org/data/2.5/weather?q=${place}&appid=${ap
     console.log(data);
     console.log(`Temperature in ${data.name}: ${data.main.temp}°C`)
     
-para.innerText=`Temperature in ${data.name}: ${data.main.temp}°C , Wind speed is :${data.wind.speed} `;
+para.innerText=`Temperature in ${data.name}: ${data.main.temp}°C , Wind speed is :${data.wind.speed} 
+ Humidity feels like ${data.main.humidity} , Country ${data.sys.country}`;
 }
 
 document.querySelector("#search-button").addEventListener("click",getweather);
